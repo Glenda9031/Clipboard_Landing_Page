@@ -52,6 +52,8 @@ header {
     font-size: 1.4rem;
     margin: 1em auto 2em;
     line-height: 1.4em;
+    color:hsl(233, 100%, 69%);
+    font-weight: 300;
 }
 
 .download_btn {
@@ -83,6 +85,8 @@ header {
 .keep-track > p {
     margin: 1.2em auto 5em;
     line-height: 1.6em;
+    color:hsl(233, 100%, 69%);
+    font-weight: 300;
 }
 
 .lower {
@@ -93,22 +97,27 @@ header {
     width: 100%;
 }
 
-.feature-conntainer {
-    margin-left: 17%;
+.feature {
+/*    margin-left: 40px;*/
     height: 90%;
     width: 54%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding-left: 20px;
 }
 
 .feature h5 {
     font-size: 1.5rem;
+    margin-bottom: 0;
 }
 
 .feature p {
     line-height: 1.8em;
-    padding: 3em 0;
+    padding: 1em 0;
+    color:hsl(233, 100%, 69%);
+    font-weight: 300;
+
 }
 
 .accessibility {
@@ -123,6 +132,8 @@ header {
 .accessibility p {
     margin: 1.2em auto 5em;
     line-height: 1.6em;
+    color:hsl(233, 100%, 69%);
+    font-weight: 300;
 }
 
 .tools {
@@ -136,6 +147,8 @@ header {
 
 .tools > p {
     margin: 1.2em auto 3.8em;
+    color:hsl(233, 100%, 69%);
+    font-weight: 300;
 }
 
 .tools .container {
@@ -154,6 +167,8 @@ header {
 
 .tool p {
     line-height: 1.7em;
+    color:hsl(233, 100%, 69%);
+    font-weight: 300;
 }
 
 .brands {
@@ -184,6 +199,211 @@ header {
     margin: 1em auto 2em;
     line-height: 1.4em;
     font-size: 1.2rem;
+    color:hsl(233, 100%, 69%);
+    font-weight: 300;
+}
+
+footer {
+    background-color: #F5F6F8;
+    padding: 2.7em 0;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    flex: 0 0 18%;
+}
+
+.social-icons {
+    flex: 0 0 14%;
+}
+
+.footer-logo img {
+    width: 60px;
+}
+
+.footer-menu {
+    flex: 1;
+    display: flex;
+}
+
+.f-menu {
+    width: 25%;
+}
+
+.f-menu a {
+    display: block;
+    line-height: 2em;
+    text-decoration: none;
+    color: #000;
+}
+
+.social-icons a {
+    display: block;
+    float: right;
+    width: 33.33%;
+    text-align: right;
+}
+
+.social-cons i:hover  {
+    color:hsl(171, 66%, 44%);
+}
+
+.f-menu a:hover {
+    color: hsl(171, 66%, 44%);
+}
+
+.attribution {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    display: block;
+    font-size: 12px;
+    padding: 2em 0;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 920px) {
+    .accessibility img {
+        width: 60%;
+        margin: auto;
+    }
+
+    .lower {
+        align-items: center;
+    }
+
+    .lower-left img {
+        height: 100%;
+    }
+}
+
+@media screen and (max-with: 700px) {
+    body {
+        font-size: 17px;
+    }
+
+    .container,
+    .small-container,
+    .install .small-container,
+    .tools h3,
+    .tools p {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .lower {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .lower-left img {
+        width: 60%;
+        margin-bottom: 2em;
+    }
+
+    .feature {
+        width: 80%;
+        margin-bottom: 1.1em;
+    }
+
+    .tools > p {
+        margin: 1.2em auto 3.8em;
+    }
+
+    .tools .container {
+        flex-direction: column;
+        width: 60%;
+    }
+
+    .tools :nth-child(2) img {
+        margin-top: 4em;
+    }
+    .tools :nth-child(2) p {
+        margin-bottom: 4em;
+    }
+
+    .social-icons {
+        flex: 0 0 22%;
+    }
+
+    .footer-menu {
+        flex: 1;
+        justify-content: space-between;
+    }
+
+    .f-menu {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .para h2, .para h3 {
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
+
+    .download_btn {
+        display: block;
+    }
+
+    .download .one {
+        argin-bottom: 1em;
+    }
+
+    .feature {
+        width: 80%;
+        margin: auto;
+    }
+
+    .tools .container {
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .brands {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1em 0;
+    }
+
+    .brands .brand img {
+        width: 100%;
+        margin: 1em auto;
+    }
+
+    footer .container {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-menu {
+        display: block;
+        text-align: center;
+        padding: 2em 0;
+    }
+
+    .f-menu {
+        width: 100%;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-icons a {
+        display: block;
+        float: none;
+        flex:  0 0 20%;
+        text-align: center;
+    }
 }
 
 
